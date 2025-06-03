@@ -1,13 +1,11 @@
-class Triangulo:
-    def __init__(self, base, altura):
-        self.base = base
-        self.altura = altura
+def calcular_area(base, altura):
+    return (base * altura) / 2
 
-    def calcular_area(self):
-        return (self.base * self.altura) / 2
-
-if __name__ == "__main__":
+def main():
     base = float(input("Base: "))
     altura = float(input("Altura: "))
-    triangulo = Triangulo(base, altura)
-    print("Área:", triangulo.calcular_area())
+    area = calcular_area(base, altura)
+    print("Área:", area)
+
+if __name__ == "__main__":
+    main()
